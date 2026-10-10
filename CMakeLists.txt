@@ -71,7 +71,7 @@ target_sources(${MAIN_LIBRARY_NAME}
         src/CReteta.cpp
         src/Reteta.cpp
         src/Cafenea.cpp
-        src/internal/Detail.cpp
+       
 )
 
 # NOTE: Add all defined targets (e.g. executables, libraries, etc. )
