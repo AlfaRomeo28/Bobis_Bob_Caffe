@@ -4,12 +4,12 @@
 #include "CReteta.hpp"
 #include "Reteta.hpp"
 #include "Cafenea.hpp"
-#include "internal/Detail.h"
+
 
 int main()
 {
-    Detail d;
-    d.g();
+   
+   
 
     Cafenea cafenea("Bobis_Bob_Caffe", 1000.0);
 
