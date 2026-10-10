@@ -5,12 +5,8 @@
 #include "Reteta.hpp"
 #include "Cafenea.hpp"
 
-
 int main()
 {
-   
-   
-
     Cafenea cafenea("Bobis_Bob_Caffe", 1000.0);
 
     //  stoc de ingrediente de baza
@@ -91,60 +87,60 @@ int main()
         if (optiune == 1)
         {
             std::cout << "\n" << cafenea << "\n";
-            std::cout<<"Doriti sa continuati? : (Y/N)";
-            std::cin>>op2;
-            if(op2=='Y')
+            std::cout << "Doriti sa continuati? : (Y/N)";
+            std::cin >> op2;
+            if (op2 == 'Y')
                 continue;
-            else if(op2=='N')
+            else if (op2 == 'N')
                 break;
-            else if(op2!='Y' && op2!='N')
+            else
             {
-                std::cout<<"Eroare!"<<"\n";
+                std::cout << "Eroare!\n";
                 break;
             }
         }
         else if (optiune == 2)
         {
             cafenea.proceseazaComanda("Espresso");
-            std::cout<<"Doriti sa continuati? : (Y/N)";
-            std::cin>>op2;
-            if(op2=='Y')
+            std::cout << "Doriti sa continuati? : (Y/N)";
+            std::cin >> op2;
+            if (op2 == 'Y')
                 continue;
-            else if(op2=='N')
+            else if (op2 == 'N')
                 break;
-            else if(op2!='Y' && op2!='N')
+            else
             {
-                std::cout<<"Eroare!"<<"\n";
+                std::cout << "Eroare!\n";
                 break;
             }
         }
         else if (optiune == 3)
         {
             cafenea.proceseazaComanda("Cappuccino");
-            std::cout<<"Doriti sa continuati? : (Y/N)";
-            std::cin>>op2;
-            if(op2=='Y')
+            std::cout << "Doriti sa continuati? : (Y/N)";
+            std::cin >> op2;
+            if (op2 == 'Y')
                 continue;
-            else if(op2=='N')
+            else if (op2 == 'N')
                 break;
-            else if(op2!='Y' && op2!='N')
+            else
             {
-                std::cout<<"Eroare!"<<"\n";
+                std::cout << "Eroare!\n";
                 break;
             }
         }
         else if (optiune == 4)
         {
             cafenea.proceseazaComanda("Vanilla Latte");
-            std::cout<<"Doriti sa continuati? : (Y/N)";
-            std::cin>>op2;
-            if(op2=='Y')
+            std::cout << "Doriti sa continuati? : (Y/N)";
+            std::cin >> op2;
+            if (op2 == 'Y')
                 continue;
-            else if(op2=='N')
+            else if (op2 == 'N')
                 break;
-            else if(op2!='Y' && op2!='N')
+            else
             {
-                std::cout<<"Eroare!"<<"\n";
+                std::cout << "Eroare!\n";
                 break;
             }
         }
@@ -157,15 +153,15 @@ int main()
             if (cafenea.poatePrepara(numeProdus))
             {
                 std::cout << "[INFO] Exista stoc suficient pentru '" << numeProdus << "'.\n";
-                std::cout<<"Doriti sa continuati? : (Y/N)";
-                std::cin>>op2;
-                if(op2=='Y')
+                std::cout << "Doriti sa continuati? : (Y/N)";
+                std::cin >> op2;
+                if (op2 == 'Y')
                     continue;
-                else if(op2=='N')
+                else if (op2 == 'N')
                     break;
-                else if(op2!='Y' && op2!='N')
+                else
                 {
-                    std::cout<<"Eroare!"<<"\n";
+                    std::cout << "Eroare!\n";
                     break;
                 }
             }
@@ -177,15 +173,15 @@ int main()
         else if (optiune == 6)
         {
             cafenea.afiseazaRaportProfitabilitate();
-            std::cout<<"Doriti sa continuati? : (Y/N)";
-            std::cin>>op2;
-            if(op2=='Y')
+            std::cout << "Doriti sa continuati? : (Y/N)";
+            std::cin >> op2;
+            if (op2 == 'Y')
                 continue;
-            else if(op2=='N')
+            else if (op2 == 'N')
                 break;
-            else if(op2!='Y' && op2!='N')
+            else
             {
-                std::cout<<"Eroare!"<<"\n";
+                std::cout << "Eroare!\n";
                 break;
             }
         }
