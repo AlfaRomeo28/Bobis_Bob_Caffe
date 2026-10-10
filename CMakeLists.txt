@@ -67,7 +67,10 @@ add_executable(${MAIN_EXECUTABLE_NAME}
 )
 target_sources(${MAIN_LIBRARY_NAME}
     PRIVATE
-        src/Example.cpp
+        src/Ingrediente.cpp
+        src/CReteta.cpp
+        src/Reteta.cpp
+        src/Cafenea.cpp
         src/internal/Detail.cpp
 )
 
